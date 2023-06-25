@@ -40,7 +40,7 @@
 .product {
     display: inline-block;
     margin: 4%;
-    width: 240px;
+    width: 230px;
     font-size: 15px;
     height: 300px;
     padding: 2%;
@@ -85,7 +85,7 @@
 }
 
 .product:hover {
-    background-color: rgb(140, 41, 97);
+    transform: scale(1.1);
     transition: 100ms ease;
 }
 

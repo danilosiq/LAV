@@ -1,0 +1,149 @@
+.loc {
+    border-radius: 4px;
+    width: 20%;
+    height: 40px;
+    background-color: rgb(237, 237, 237);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(188, 188, 188);
+    margin-bottom: 1%;
+}
+
+.rua {
+    border-radius: 4px;
+    width: 72%;
+    height: 40px;
+    margin-bottom: 1%;
+    background-color: rgb(237, 237, 237);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(188, 188, 188);
+}
+
+.comp {
+    border-radius: 4px;
+    width: 61%;
+    height: 40px;
+    margin-bottom: 1%;
+    background-color: rgb(237, 237, 237);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(188, 188, 188);
+}
+
+.est {
+    border-radius: 4px;
+    width: 10%;
+    height: 40px;
+    background-color: rgb(237, 237, 237);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(188, 188, 188);
+    margin-bottom: 1%;
+}
+
+.cid {
+    border-radius: 4px;
+    width: 30%;
+    height: 40px;
+    background-color: rgb(237, 237, 237);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(188, 188, 188);
+}
+
+.search {
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    color: rgb(31, 31, 31);
+    background-color: rgb(185, 147, 205);
+    transition: padding-left 200ms ease;
+}
+
+.search:hover {
+    padding-left: 20px;
+    transition: 200ms;
+}
+
+
+.usu:focus,
+.loc:hover,
+.comp:hover,
+.est:hover {
+    transition: 500ms;
+    outline: none;
+    border-color: rgb(142, 37, 116);
+    background-color: rgb(219, 219, 219);
+}
+
+.container{
+    width: 1580px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding-top: 5%;
+    justify-content: space-around;
+}
+
+.locamp{
+    width: 48%;
+    padding: 1%;
+}
+
+.paycamp{
+    width: 48%;
+    padding: 1%;
+}
+h1{
+    color: rgb(142, 37, 116);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button[type='submit']{
+
+    background-color: rgb(142, 37, 116);
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 7px;
+    transition: 300ms ease;
+}
+p{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.finish:hover{
+    width: 50%;
+    border-radius: 90px;
+}
+@media(width<2160px) {
+    .container{
+        width: 95%;
+    }
+}
+
+@media(width<1080px) {
+    .container{
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+    .locamp,.paycamp{
+        width: 80%;
+    }
+    .est{
+        width: 20%;
+    }
+}
