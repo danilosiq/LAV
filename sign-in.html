@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se!</title>
+    <link rel="stylesheet" href="/css/sign-in.css">
+    <link rel="stylesheet" href="/css/global.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <h3 class="l">L</h3>
+        <h3 class="a">A</h3>
+        <h3 class="v">V</h3>
+        <h3 class="v">.</h3>
+        <div class="invi"></div>
+        <li><a href="/index.html"> Inicio </a></li>
+        <li><a href="#intro">Saiba mais </a></li>
+        <li><a href="/sign-in.html">Cadastrar-se </a></li>
+        <li><a href="/login.html">Entrar</a></li>
+    </nav>
+
+    <div class="container" id="container">
+        <div class="img"><img src="/img/sign-in-img.png" alt="" class="pc-format"> </div>
+        <div class="sign-in-camp">
+
+            <h1>Cadastre - se!</h1>
+            <p>Participe nesse mundo! Se aventure com nós</p><br><br>
+            <form action="/cadastro" method="post">
+                <label for="username"> Usuario:<br> <input type="text" placeholder="Usuario" required id="nome"
+                        name="nome"></label><br><br>
+                <label for="email">Email: <br> <input type="email" placeholder="Email" required id="email"
+                        name="email"></label><br><br>
+                <p>Gênero:</p>
+                <label for="gener-men"> <input type="radio" name="genero" value="masculino" id="genero">
+                    Masculino</label><br>
+                <label for="gener-woman"> <input type="radio" name="genero" value="Feminino" id="genero">
+                    Feminino</label><br><br>
+                <label for="password"> Senha:<br> <input type="password" placeholder="Senha" required id="senha"
+                        name="senha"></label><br>
+                <label for="terms"><input type="checkbox" required> Eu aceitos os <a href=""> termos de
+                        serviço.</a></label><br><br>
+                <button type="submit">Confirmar</button>
+            </form><br><br>
+
+            <center>
+                <p>Ja tem conta? Faça o <a href="login.html">Login</a></p>
+            </center>
+
+
+
+        </div>
+        <center>
+            <div class="img-phone"><img src="/img/sign-in-img.png" alt="" class="phone-format"> </div>
+        </center><br>
+
+
+</body>
+
+</html>

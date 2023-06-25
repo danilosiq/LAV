@@ -1,0 +1,182 @@
+.invi {
+    width: 40%;
+}
+
+section {
+    width: 1080px;
+    height: auto;
+    margin: auto;
+}
+
+.intro {
+    font-size: 40px;
+    margin-bottom: 3%;
+    color: antiquewhite;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+hr {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.button-intro {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 290px;
+    color: rgb(40, 40, 40);
+    font-size: 30px;
+
+    background-color: rgb(216, 179, 207);
+    padding: 40px 90px;
+    border-radius: 10px;
+    transition: 500ms ease;
+}
+
+.button-intro img {
+    width: 80px;
+    height: auto;
+}
+
+.button-intro:hover {
+    background-color: rgb(185, 147, 205);
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding-bottom: 4%;
+}
+
+.img {
+    width: 49%;
+}
+
+.back {
+    background-color: rgb(142, 37, 116);
+    padding-bottom: 3%;
+}
+
+.textcamp-intro {
+    font-size: 26px;
+    text-align: end;
+    width: 49%;
+}
+
+.textcamp-idea {
+    font-size: 26px;
+    width: 49%;
+}
+
+.tutotext {
+    filter: opacity(80%);
+
+}
+
+.tutocamp {
+    display: flex;
+    align-items: center;
+}
+
+.seta {
+    width: 40px;
+    height: 40px;
+}
+
+.card {
+    width: 40%;
+    padding-top: 3%;
+    height: 180px;
+}
+
+
+.card img {
+    width: 100px;
+}
+
+@media(width<1080px) {
+    section {
+        width: 720px;
+    }
+
+    .button-intro {
+        width: 50%;
+        margin-bottom: 1%;
+        height: auto;
+    }
+
+    .buttons {
+        display: block;
+    }
+
+    .box {
+        align-items: center;
+    }
+}
+
+@media(width<720px) {
+    .invi {
+        display: none;
+    }
+
+    .l,
+    .a,
+    .v {
+        display: none;
+    }
+
+    section {
+
+        width: 480px;
+    }
+
+    .box {
+        display: block;
+    }
+
+    .intro {
+        width: 90%;
+    }
+
+    .textcamp-intro,
+    .textcamp-idea {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .img {
+        margin: auto;
+    }
+
+    .card img {
+        width: 60%;
+    }
+
+    .tutocamp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .tutocamp div{
+        margin-bottom: 5%;
+    }
+
+    .seta {
+        transform: rotate(90deg);
+    }
+
+    .button-intro {
+        width: 40%;
+        margin-bottom: 1%;
+        height: auto;
+    }
+}

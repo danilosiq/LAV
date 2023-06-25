@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.img {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3ebe9;
+}
+
+.pc-format {
+
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.sign-in-camp {
+
+    margin-left: 5%;
+    margin-top: 10vh;
+    height: auto;
+}
+
+.sign-in-camp h1 {
+    text-align: center;
+    color: rgb(142, 37, 116);
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sign-in-camp p,
+label {
+    font-size: 20px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type="text"],
+input[type="Email"],
+input[type="password"] {
+    border-radius: 4px;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(237, 237, 237);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(188, 188, 188);
+}
+
+input[type="text"]:focus,
+input[type="Email"]:focus,
+input[type="password"]:focus {
+    transition: 500ms;
+    outline: none;
+    border-color: rgb(142, 37, 116);
+    background-color: rgb(219, 219, 219);
+}
+
+input[type="text"]:hover,
+input[type="Email"]:hover,
+input[type="password"]:hover {
+    transition: 500ms;
+    outline: none;
+    border-color: rgb(142, 37, 116);
+    background-color: rgb(219, 219, 219);
+}
+
+button {
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(142, 37, 116);
+    transition: padding-left 200ms ease;
+}
+
+button:hover {
+    padding-left: 20px;
+    transition: 200ms;
+}
+
+
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+
+.img-phone {
+    display: none;
+    object-fit: cover;
+    height: auto;
+}
+
+.phone-format {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (width < 1000px) {
+
+    .container {
+        height: auto;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .sign-in-camp {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        padding: 10px;
+        border-radius: 7px;
+
+    }
+
+    .img-phone {
+        display: block;
+        width: 90%;
+    }
+
+
+    .container {
+        flex-direction: column;
+        background-color: #f3ebe9;
+    }
+
+
+    .pc-format {
+        display: none;
+    }
+
+}
+
+
+@media (width <660px) {
+    .sign-in-camp h1 {
+        font-size: 60px;
+    }
+}
