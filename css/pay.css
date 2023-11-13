@@ -1,87 +1,4 @@
-.loc {
-    border-radius: 4px;
-    width: 20%;
-    height: 40px;
-    background-color: rgb(237, 237, 237);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: rgb(188, 188, 188);
-    margin-bottom: 1%;
-}
 
-.rua {
-    border-radius: 4px;
-    width: 72%;
-    height: 40px;
-    margin-bottom: 1%;
-    background-color: rgb(237, 237, 237);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: rgb(188, 188, 188);
-}
-
-.comp {
-    border-radius: 4px;
-    width: 61%;
-    height: 40px;
-    margin-bottom: 1%;
-    background-color: rgb(237, 237, 237);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: rgb(188, 188, 188);
-}
-
-.est {
-    border-radius: 4px;
-    width: 10%;
-    height: 40px;
-    background-color: rgb(237, 237, 237);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: rgb(188, 188, 188);
-    margin-bottom: 1%;
-}
-
-.cid {
-    border-radius: 4px;
-    width: 30%;
-    height: 40px;
-    background-color: rgb(237, 237, 237);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: rgb(188, 188, 188);
-}
-
-.search {
-    border-radius: 7px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    color: rgb(31, 31, 31);
-    background-color: rgb(185, 147, 205);
-    transition: padding-left 200ms ease;
-}
-
-.search:hover {
-    padding-left: 20px;
-    transition: 200ms;
-}
-
-
-.usu:focus,
-.loc:hover,
-.comp:hover,
-.est:hover {
-    transition: 500ms;
-    outline: none;
-    border-color: rgb(142, 37, 116);
-    background-color: rgb(219, 219, 219);
-}
 
 .container{
     width: 1580px;
@@ -96,10 +13,47 @@
     width: 48%;
     padding: 1%;
 }
+#butao{
+    background-color: rgb(142, 37, 116);
+    border-radius: 10px;
+    width: 150px;
+    height: 100px;
+    margin-top: 30%;
+    border-style: none;  
+    transition: all 200ms;  
+}
+#butao:hover img{
+    margin-left: 30%;
+}
+#butao img{
+    width: 80px;
+    height: 80px;
+    filter: invert(100%);
 
-.paycamp{
-    width: 48%;
-    padding: 1%;
+    transition: all 200ms; 
+}
+.back{
+    background-color:rgb(142, 37, 116) ;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.back img{
+    width: 60px;
+    height: 60px;
+    margin-left: 55%;
+    filter: invert(100%);
+    transform: rotate(180deg);
+    transition: all 200ms ease;
+}
+
+.back:hover img{
+    margin-left: 5%;
+}
+
+
+.container-pay{
+    display: none;
 }
 h1{
     color: rgb(142, 37, 116);

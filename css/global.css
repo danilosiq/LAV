@@ -27,6 +27,11 @@ li {
 
 }
 
+li p{
+    color: antiquewhite;
+
+}
+
 li a {
     color: antiquewhite;
 }
@@ -34,6 +39,8 @@ li a {
 nav h3 {
     font-size: 40px;
 }
+
+
 
 .l,
 .a,

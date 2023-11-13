@@ -1,3 +1,11 @@
+<?php
+$logado=0;
+session_start();
+if(isset($_SESSION['idlog'])){
+    $logado = 1;
+};
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,24 +14,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo!</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/oficial/css/index.css">
+    <link rel="stylesheet" href="/oficial/css/global.css">
 </head>
 
 <body>
 
-    <nav>
-        <h3 class="l">L</h3>
-        <h3 class="a">A</h3>
-        <h3 class="v">V</h3>
-        <h3 class="v">.</h3>
-        <div class="invi"></div>
-        <li><a href="/index.html"> Inicio </a></li>
-        <li><a href="#intro">Saiba mais </a></li>
-        <li><a href="/sign-in.html">Cadastrar-se </a></li>
-        <li><a href="/login.html">Entrar</a></li>
-    </nav>
+<?php
+if($logado ===1){
+    
+    echo"<nav>
+        <h3 class='l'>L</h3>
+        <h3 class='a'>A</h3>
+        <h3 class='v'>V</h3>
+        <h3 class='v'>.</h3>
+        <div class='invi'></div>
+        <li><a href='/OFICIAL/index.php'> Inicio </a></li>
+        <li><a href='#intro'>Saiba mais </a></li>
+        <li><a href='/OFICIAL/index.php?logout'>Logout</a></li>
+        <li><a href=''>".$_SESSION['username']."</a></li>
+        </nav>";
 
+        if(isset($_GET['logout'])){
+            session_destroy();
+            header('location:login.php');
+        }
+}else{
+    echo"<nav>
+    <h3 class='l'>L</h3>
+    <h3 class='a'>A</h3>
+    <h3 class='v'>V</h3>
+    <h3 class='v'>.</h3>
+    <div class='invi'></div>
+    <li><a href='/OFICIAL/index.php'> Inicio </a></li>
+    <li><a href='#intro'>Saiba mais </a></li>
+    <li><a href='/OFICIAL/sign-in.php'>Cadastrar-se </a></li>
+    <li><a href='/OFICIAL/login.php'>Entrar</a></li>
+    </nav>";
+
+}
+?>
 
     <div class="back">
         <br><br><br><br>
@@ -37,9 +67,9 @@
 
             <div class="buttons">
 
-                <a href="/aplication.html">
+                <a href="./buyset.php">
                     <div class="button-intro">
-                        <img src="/img/cleantshirt.png" alt=""><br>
+                        <img src="./img/cleantshirt.png" alt=""><br>
                         Começar
                         <hr>
                         <p>Faça aqui seu pedido de lavagem de roupas!</p>
@@ -48,7 +78,7 @@
 
                 <a href="#intro">
                     <div class="button-intro">
-                        <img src="/img/delivery.png" alt=""><br>
+                        <img src="./img/delivery.png" alt=""><br>
                         Saiba mais
                         <hr>
                         <p>Continue lendo sobre a origem da LAV e como
@@ -67,7 +97,7 @@
         <div class="box" id="intro">
 
             <div class="img">
-                <img src="/img/house.png" alt="">
+                <img src="./img/house.png" alt="">
             </div>
 
 
@@ -111,7 +141,7 @@
             </div>
 
             <div class="img">
-                <img src="/img/idea.png" alt="">
+                <img src="./img/idea.png" alt="">
             </div>
         </div>
 
@@ -131,32 +161,32 @@
         <div class="tutocamp">
 
             <div class="card">
-                <center><img src="/img/smartphone.png" alt="">
+                <center><img src="./img/smartphone.png" alt="">
                     <h2>Peça pelo nosso aplicativo</h2>
                 </center>
             </div>
 
-            <img src="/img/seta-direita.png" alt="" class="seta">
+            <img src="./img/seta-direita.png" alt="" class="seta">
 
             <div class="card">
-                <center><img src="/img/entrega.png" alt="">
+                <center><img src="./img/entrega.png" alt="">
                     <h2>O motoboy busca na sua casa</h2>
                 </center>
             </div>
 
-            <img src="/img/seta-direita.png" alt="" class="seta">
+            <img src="./img/seta-direita.png" alt="" class="seta">
 
             <div class="card">
-                <center><img src="/img/brilha.png" alt="">
+                <center><img src="./img/brilha.png" alt="">
                     <h2>Nós fazemos nossa magica</h2>
                 </center>
             </div>
 
-            <img src="/img/seta-direita.png" alt="" class="seta">
+            <img src="./img/seta-direita.png" alt="" class="seta">
 
 
             <div class="card">
-                <center><img src="/img/delivery.png" alt="">
+                <center><img src="./img/delivery.png" alt="">
                     <h2>E pronto! entregamos até voce!</h2>
                 </center>
             </div>
@@ -164,7 +194,6 @@
         <br><br><br><br>
 
     </section>
-
 
 
 

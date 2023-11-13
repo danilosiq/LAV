@@ -1,0 +1,132 @@
+<?php
+if($logado ===1){
+    
+    echo"<nav>
+        <h3 class='l'>L</h3>
+        <h3 class='a'>A</h3>
+        <h3 class='v'>V</h3>
+        <h3 class='v'>.</h3>
+        <div class='invi'></div>
+        <li><a href='/OFICIAL/index.php'> Inicio </a></li>
+        <li><a href='#intro'>Saiba mais </a></li>
+        <li><a href='/OFICIAL/index.php?logout'>Logout</a></li>
+        <li><a href=''>".$_SESSION['username']."</a></li>
+        </nav>";
+
+        if(isset($_GET['logout'])){
+            session_destroy();
+            header('location:login.php');
+        }
+}else{
+    echo"<nav>
+    <h3 class='l'>L</h3>
+    <h3 class='a'>A</h3>
+    <h3 class='v'>V</h3>
+    <h3 class='v'>.</h3>
+    <div class='invi'></div>
+    <li><a href='/OFICIAL/index.php'> Inicio </a></li>
+    <li><a href='#intro'>Saiba mais </a></li>
+    <li><a href='/OFICIAL/sign-in.php'>Cadastrar-se </a></li>
+    <li><a href='/OFICIAL/login.php'>Entrar</a></li>
+    </nav>";
+
+}
+?>
+
+
+
+
+
+
+
+<?php 
+            echo "<h1>".$_SESSION['total']."</h1>";
+            
+            ?>
+
+
+
+
+
+            <center>
+                        <div class="product">
+                            <center>
+                                <h2>Bermudas</h2>
+                                <img src="./img/bermudas.png" alt="">
+                                <h2>R$5.75</h2>
+                                <input type="number" placeholder="Quantidade" id="qbermuda" name="qbermuda" class="usu"
+                                    data-price="5.75">
+                            </center>
+                        </div>
+
+                        <div class="product">
+                            <center>
+                                <h2>Calcinhas</h2>
+                                <img src="./img/calcinhas.png" alt="">
+                                <h2>R$2.15</h2>
+                                <input type="number" placeholder="Quantidade" id="qcalcinha" name="qcalcinha"
+                                    class="usu" data-price="2.15">
+                            </center>
+                        </div>
+
+                        <div class="product">
+                            <center>
+                                <h2>Camisetas - R$6.50</h2>
+                                <img src="./img/camiseta-(1).png" alt="">
+                                <h2>R$6.50</h2>
+                                <input type="number" placeholder="Quantidade" id="qcamiseta" name="qcamiseta"
+                                    class="usu" data-price="6.50">
+                            </center>
+                        </div>
+
+                        <div class="product">
+                            <center>
+                                <h2>Meias(par)</h2>
+                                <img src="./img/meias.png" alt="">
+                                <h2>R$0.85</h2>
+                                <input type="number" placeholder="Quantidade" id="qmeia" name="qmeia" class="usu"
+                                    data-price="0.85">
+                            </center>
+                        </div>
+
+                        <div class="product">
+                            <center>
+                                <h2>Casacos</h2>
+                                <img src="./img/um-casaco-com-capuz.png" alt="">
+                                <h2>R$7.00</h2>
+                                <input type="number" placeholder="Quantidade" id="qcasaco" name="qcasaco" class="usu"
+                                    data-price="7.00">
+                            </center>
+                        </div>
+
+                        <div class="product">
+                            <center>
+                                <h2>Sutiãs</h2>
+                                <img src="./img/sutia.png" alt="">
+                                <h2>R$3.00</h2>
+                                <input type="number" placeholder="Quantidade" id="qsutia" name="qsutia" class="usu"
+                                    data-price="3.00">
+                            </center>
+                        </div>
+
+                        <div class="product">
+                            <center>
+                                <h2>Cuecas</h2>
+                                <img src="./img/cuecas-(1).png" alt="">
+                                <h2>R$3.00</h2>
+                                <input type="number" placeholder="Quantidade" id="qcueca" name="qcueca" class="usu"
+                                    data-price="3.00">
+                            </center>
+                        </div>
+
+                        <div class="product">
+                            <center>
+                                <h2>Peças Jeans</h2>
+                                <img src="./img/jeans (1).png" alt="">
+                                <h2>R$8.00</h2>
+                                <input type="number" placeholder="Quantidade" id="qjeans" name="qjeans" class="usu"
+                                    data-price="8.00">
+                            </center>
+                        </div>
+
+                    </center>
